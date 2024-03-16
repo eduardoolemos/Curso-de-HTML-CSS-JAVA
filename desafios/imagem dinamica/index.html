@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem Dinâmica</title>
+</head>
+<body>
+    <h1>Desafio da imagem dinâmica</h1>
+    <p>O desafio é criar uma imagem dinâmica que conforme o tamanho que fique o navegador a imagem vai se ajustando de acordo com seu limite máximo</p>
+    <picture>
+        <source media="(max-width:600px)" srcset="imagens/image-400-p.png" sizes="">
+        <source media="(max-width:750px)" srcset="imagens/image-700-m.png" sizes="">
+        <img src="imagens/image-1200-g.png" alt="imagem Dinâmica">
+    </picture>
+</body>
+</html>
