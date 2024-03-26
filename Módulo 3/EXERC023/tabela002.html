@@ -10,11 +10,17 @@
     body{
         font-family: Arial, Helvetica, sans-serif;
         text-align: center;
+
     }
 
-    body h1{
-        padding-bottom: 30px;
+    main{
+        text-align: left;
     }
+    
+    main h1{
+        padding-top: 30px;
+    }
+
 
     table{
         width: 500px;
@@ -22,28 +28,53 @@
 
         
     }
-
-    th{
-        border: 1px solid black;
-        padding-bottom: 20px;
-        padding-top: 20px;
-        text-align: center;
+    
+    
+    tbody tr:nth-child(odd) {
+        background-color: white;
+    }
+    tbody tr:nth-child(even) {
         background-color: grey;
+    }
+
+    
+    th{
+        border: 1px solid white;
+        text-align: center;
+        background-color: black;
+        color: white;
     }
 
     td{
         border: 1px solid black;
         text-align: center;
         padding-top: 10px;
+        font-weight: bolder;
+    }
+
+    td.num{
+        font-weight: lighter;
+    }
+
+    tfoot>tr>td{
+        text-align: center;
+        background-color: black;
+        color: white;
+        border: 1px solid white;
+
     }
     
-   
+    caption {
+    background-color: rgba(128, 128, 128, 0.582);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border: 1px solid black;
+   }
 
 
 </style>
 <body>
-    <h1>Lista de unidades federativas do Brasil por população
-    </h1>
+    <h1>Uso de tabelas grandes</h1>
     <!--TABLE = tabela
             THEAD - tr th td
             TBODY - tr th td
@@ -52,25 +83,62 @@
     <table>
         <thead>
             <tr>
-                <th>Unidade Federativa</th>
-                <th>População</th>
+                <th scope="col">Posição</th>
+                <th scope="col">Unidade Federativa</th>
+                <th scope="col">População</th>
             </tr>
         </thead>
         <tbody>
+            <caption>Lista de unidades federativas do Brasil por população</caption>
             <tr>
+                <td>1</td>
                 <td>São Paulo</td>
-                <td>44 411 238</td>
+                <td class="num">44 411 238</td>
             </tr>
             <tr>
+                <td>2</td>
                 <td>Minas Gerais</td>
-                <td>20 538 718</td>
+                <td class="num">20 538 718</td>
             </tr>
             <tr>
+                <td>3</td>
                 <td>Rio de Janeiro</td>
-                <td>16 054 524</td>
+                <td class="num">16 054 524</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Bahia</td>
+                <td class="num">14 141 626</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Paraná</td>
+                <td class="num">11 444 380</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Rio Grande do Sul</td>
+                <td class="num">10 882 965</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Ceará</td>
+                <td class="num">8 794 957</td>
             </tr>
         </tbody>
+        <tfoot>
+            <tr>
+                <td>Total de Estados: 7</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tfoot>
     </table>
-    
+    <main>
+        <h1>Continuação</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, nam tempora. Expedita facilis repudiandae illo voluptatem odit vitae delectus dolor consectetur velit ex incidunt, ea praesentium? Quasi consequatur nisi at?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam porro quis sint aperiam ipsum cupiditate aliquam voluptatibus, corrupti accusantium deleniti quidem eveniet ipsa accusamus magni officiis reiciendis nulla dolor qui!Loremlorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, voluptates dicta in libero deserunt quasi expedita hic blanditiis est eligendi voluptatem ad cum, ipsa labore obcaecati aliquid iusto! Ratione, repellat.
+        </p>
+    </main>
 </body>
 </html>
