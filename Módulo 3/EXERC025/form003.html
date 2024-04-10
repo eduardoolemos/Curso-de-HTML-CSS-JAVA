@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Saúde</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bem-Vindo(a) a clínica mais amada de Santa Catarina</h1>
+    <form action="cadastro.php">
+    <p><label for="inome">Nome</label> 
+        <input type="text" minlength="1" required placeholder="Insira seu primeiro nome aqui" id="inome" name="nome">
+    </p>
+    
+    <p><label for="iidade">Idade</label>
+        <input type="number" required placeholder="Insira apenas números" id="iidade" name="idade" step="1">
+    </p>
+
+    <p><label for="isexo">Sexo</label>
+        <input type="text" required id="isexo" placeholder="insira apenas M ou F" id="isexo" name="sexo">
+    </p>
+
+    <p><label for="iquestion">Ja fez algum procedimento estético?</label>
+        <input type="text" placeholder="Insira apenas Sim ou Não" required id="iquestion" name="question">
+    </p>
+
+    <input type="submit" name="enviar" id="ienviar" >
+
+    </form>
+</body>
+</html>
