@@ -15,10 +15,10 @@
 
     }
 
-    .cabecalho{
+    thead,tr.coluna{
         background-color: grey;
         color: white;
-        text-align: center;
+        text-align: justify;
     }
     
     th{
@@ -43,31 +43,24 @@
 </style>
 <body>
     <table>
-
-        <colgroup>
-        <col class="cabecalho">
-        </colgroup>
-
-
         <thead>
         <tr>
-            <th rowspan="2" class="cabecalho">Área</th>
-            <th rowspan="2" class="cabecalho">Disciplinas</th>
-            <th colspan="2" class="cabecalho">Notas</th>
-            <th rowspan="2" class="cabecalho">Média</th>
+            <th rowspan="2">Área</th>
+            <th rowspan="2">Disciplinas</th>
+            <th colspan="2">Notas</th>
+            <th rowspan="2">Média</th>
         </tr>
 
         <tr>
-            <th class="cabecalho">Nota 1</th>
-            <th class="cabecalho">Nota 2</th>
+            <th>Nota 1</th>
+            <th>Nota 2</th>
         </tr>
     </thead>
 
     <tbody>
 
-
         <tr>
-            <th rowspan="6" class="cabecalho">Exatas</th>
+            <th rowspan="6">Exatas</th>
             <td>Matemática</td>
             <td>0.0</td>
             <td>0.0</td>
@@ -96,12 +89,12 @@
         </tr>
 
         <tr class="coluna">
-            <th colspan="4" class="cabecalho">Média de Exatas</th>
+            <th colspan="4" >Média de Exatas</th>
             <td class="media">0.0</td>
         </tr>
 
         <tr>
-            <th rowspan="2" class="cabecalho">Humanas</th>
+            <th rowspan="2">Humanas</th>
             <td>História</td>
             <td>0.0</td>
             <td>0.0</td>
@@ -116,7 +109,7 @@
         </tr>
 
         <tr class="coluna">
-            <th colspan="4" class="cabecalho">Média de Humanas</th>
+            <th colspan="4">Média de Humanas</th>
             <td class="media">0.0</td>
         </tr>
     </tbody>
